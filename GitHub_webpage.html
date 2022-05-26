@@ -6,30 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How to make a webpage on GitHub</title>
 </head>
-<body>
-    <h1>Making your first GitHub webpage</h1>
+<body style="font-family: sans-serif;">
+    <h1 style="text-align: center; color: white; background-color: rgb(11, 21, 65); padding: 50px 10px; margin-bottom: 0; border: 0;">Making your first GitHub webpage</h1>
     <h2>System Setup</h2>
+    <p>Setting up your system properly is very important. Make sure to use the references linked below, which provide detailed instructions.</p>
         <ol>
-            <li>Download and set up VScode and make a free account</li>
-            <li>Generate SSH-Key using the command line</li>
-            <li>Make a free GitHub account</li>
-            <li>Add SSH-Key (public) to GitHub account settings</li>
-            <li>Make a new GitHub Repository</li>
+            <li>Download and set up <a href="https://code.visualstudio.com/download">VScode</a> and make a free account.</li>
+            <li><a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent"> Generate SSH-Key</a> using the command line. <i>This <a href="https://www.youtube.com/watch?v=RGOj5yH7evk">video</a> recommended by MITxPro is very helpful in walking through the steps.</i></li>
+            <li>Make a free <a href="https://github.com/">GitHub account.</a></li>
+            <li>Add SSH-Key (public) to GitHub account settings. <i>Watch video linked above for step-by-step instructions.</i></li>
+            <li>Make a new GitHub Repository. <i>In GitHub, select top right account icon and navigate to "your repositories". Select the green "New" button. <strong>Note: repository name cannot be random for GitHub to host the website, it must be named "username.github.io".</strong></i></li>
         </ol>
     <h2>Connect VScode and GitHub Repository</h2>
         <ol>
             <li>Clone GitHub Repository in VScode</li>
+                <ul>
+                    <li>Go to GitHub repository and click the green "code" button to copy the SSH code.</li>
+                    <li>In VScode, open the terminal and navigate to directory you wish to copy repository to for your local copy.</li>
+                    <li>In command line, enter "git clone SSH-code". <i>Note: paste the SSH-code that you copied from the github repository.</i></li>
+                </ul>
             <li>Make webpage content in html file</li>
-                <ol>
-                    <li>Baseline Requirements</li>
-                    <li>Make it Fancy</li>
-                </ol>
-            <li>Sync html file and GitHub Repository</li>
-                <ol>
-                    <li>Add new html to GitHub</li>
+                <ul>
+                    <li><strong>Baseline Requirements.</strong> In VScode, make sure you are still in the cloned directory on local drive (pwd) and make a new file "<a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started">index.html</a>" with website content</li>
+                    <li><strong>Make it Fancy</strong>. It is best practice to have separate files for CSS and JS. If you do separately and not in-line edits, don't forget to link the files to the index.html file!</li>
+                        <ul>
+                            <li>add a <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics">CSS file</a> for design.</li>
+                            <li>add a <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps">JS file</a> for interactivity</li>
+                        </ul>
+                </ul>
+            <li>Sync html file and GitHub Repository. In VScode terminal:</li>
+                <ul>
+                    <li>Add new html to GitHub. </li>
+                        <ul>
+                            <li><strong>git status</strong> to check what is in the folder and the current file connections with GitHub</li>
+                            <li><strong>git add .</strong> (for all listed files) or <strong>git add filename</strong> (for specific files) to add the file to GitHub</l>
+                        </ul>         
                     <li>Commit change to GitHub</li>
+                        <ul>
+                            <li><strong>git status</strong> to check the added files are set in GitHub. They should indicate that they are a "new file" and be green.</li>
+                            <li><strong>git commit -m "description of changes in this version made"</strong> to commit the version control changes to GitHub</li>
+                        </ul>    
                     <li>Push change to GitHub</li>
-                </ol>
+                        <ul>
+                            <li><strong>git push origin main</strong> to actually update the changes in the remote GitHub repository</li>
+                        </ul>  
+                </ul>
         </ol>
+    <h2>Open GitHub webpage!</h2>
+        <ol>
+            <li>Open your preferred web browser and navigate to "username.github.io". Note: after pushing changes from VScode to GitHub, this can sometimes take a minute to refresh</li>
+        </ol>
+
 </body>
 </html>
