@@ -1,5 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -18,8 +19,9 @@ h1 {
     margin: 0; 
     border: 0;
 }
+
 h2 {
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 h1.page-header {
@@ -27,6 +29,12 @@ h1.page-header {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 50px 10px;
+}
+
+figcaption {
+    font-size: 16px;
+    padding-top: 10px;
+    font-weight: 500;
 }
 /*Navigation CSS Starts
 css from: "https://www.w3schools.com/howto/howto_css_subnav.asp"*/
@@ -106,3 +114,7 @@ css from: "https://www.w3schools.com/howto/howto_css_subnav.asp"*/
     display: block;
   }
   /*Navigation CSS Ends*/
+
+  table > td {
+      vertical-align: top;
+  }
