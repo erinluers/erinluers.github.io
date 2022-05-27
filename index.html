@@ -5,13 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GitHub Portfolio</title>
+    <link rel="stylesheet" href="github-website.css">
 </head>
-<body style="font-family: sans-serif;">
-    <h1 style="text-align: center; color: white; background-color: rgb(11, 21, 65); padding: 50px 10px; margin-bottom: 0; border: 0;">Erin's Portfolio</h1>
-    <nav style="padding: 30px 10px; background-color: rgb(185, 206, 201); font-size: larger; margin-top: 0;">
-        <a href="./about.html">About Me</a>
-        <a href="./GitHub_webpage.html">Creating a GitHub Webpage</a>
-    </nav>
-    <img src="./biopic_zion.JPG" alt="Erin at Zion National Park" width="100%">
+<body>
+    <header>
+        <h1 class="page-header">Erin's Portfolio</h1>
+    </header>
+    <!-- Start navigation menu -->
+    <div class="navbar">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <div class="subnav">
+          <button class="subnavbtn">Projects<i class="caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="./GitHub_webpage.html">Creating a GitHub Webpage</a>
+            </div>
+        </div>
+    </div>
+    <!-- End navigation menu -->
+    <img src="./biopic_zion.JPG" alt="Erin at Zion National Park" style="margin: 5% 10%; width: 80%; min-width: 300px; float: center;">
+    <caption>Learning to code with a focus on web development: html, css, javascript.
+    </caption>
 </body>
 </html>
