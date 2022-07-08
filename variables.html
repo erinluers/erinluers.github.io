@@ -1,0 +1,107 @@
+<script>
+    var number1 = 10;
+    var number2 = 15;
+    var number3 = 25;
+
+    console.log(number1);
+    console.log(number2);
+    console.log(number3);
+
+    /*exercise 1 (chpt 2 eloquent javascript)
+     print a triangle pyramind of #, like below
+     #
+     ##
+     ###
+     ####
+     #####
+     ######
+     #######
+    */
+    
+    //first attempt (not very efficient)
+    let triangle = '#';
+    let counter = 0;
+
+    while (counter < 8) {
+	    console.log(triangle);
+  	    triangle = triangle + '#';
+        counter++;
+    }
+    //second attempt (using .length)
+    let line = '#';
+    while (line.length < 8) {
+	    console.log(line);
+  	    line += '#';
+    }     
+    
+    //solution (using for loop shortcut)
+    for (let line = '#'; line.length < 8; line += '#')
+        console.log(line);
+
+/* exercise 2 (chpt 2 eloquent javascript)Print all numbers 1-100
+	except print "Fizz" for numbers divisible by 3 
+    print "Buzz" for numbers divisible by 5 (and not 3)*/
+
+// first attempt    
+let number = 1;
+
+if (number % 3 == 0) {
+	console.log("Fizz");
+} else if (number % 5 == 0) {
+	console.log("Buzz");
+} else (number < 101) {
+  console.log(number);
+  number++;
+} 
+
+//second attempt - works
+for (let number = 1; number < 101; number++) {
+    if (number % 3 == 0) {
+	console.log("Fizz");
+    } else if (number % 5 == 0) {
+	console.log("Buzz");
+    } else {
+  console.log(number);
+} 
+}
+
+//solution (efficient)
+for (let n = 1; n <= 100; n++) {
+  let output = "";
+  if (n % 3 == 0) output += "Fizz";
+  if (n % 5 == 0) output += "Buzz";
+  console.log(output || n);
+}
+
+/* exercise 2 part 2 (chpt 2 eloquent javascript)Print all numbers 1-100
+	except print "FizzBuzz" for numbers divisible by both 3 and 5 "Fizz" for numbers divisible by 3 
+    print "Buzz" for numbers divisible by 5 (and not 3)*/
+
+for (let number = 1; number < 101; number++) {
+    if ((number % 3 == 0) && (number % 5 == 0)) {
+        console.log("FizzBuzz");
+    } else if (number % 3 == 0) {
+	console.log("Fizz");
+    } else if (number % 5 == 0) {
+	console.log("Buzz");
+    } else {
+  console.log(number);
+} 
+}
+
+//
+function getProduct(productId) {
+  //write your code here
+  let getObj = {
+    id: productId,
+    serialNumber: 'WD579000',
+    manufacturer: 'Apple',
+    price: 1500
+  };
+
+  console.log("id:" + getObj.id);
+  console.log("serialNumber: " + getObj.serialNumber);
+  console.log("manufacturer: " + getObj.manufacturer);
+  console.log("price: " + getObj.price);
+}
+</script>
