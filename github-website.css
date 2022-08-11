@@ -118,3 +118,16 @@ css from: "https://www.w3schools.com/howto/howto_css_subnav.asp"*/
   table > td {
       vertical-align: top;
   }
+
+  .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+}
+div{
+    padding: 50px;
+    text-align: center;
+    border-style: solid;
+    font-size: 2em;
+}
