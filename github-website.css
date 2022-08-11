@@ -115,14 +115,13 @@ css from: "https://www.w3schools.com/howto/howto_css_subnav.asp"*/
   }
   /*Navigation CSS Ends*/
 
-  table > td {
+  /* table > td {
       vertical-align: top;
-  }
-
-  .grid{
+  } */
+  /* .grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 5px;
 }
 div{
@@ -130,4 +129,4 @@ div{
     text-align: center;
     border-style: solid;
     font-size: 2em;
-}
+} */
