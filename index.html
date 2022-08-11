@@ -7,22 +7,22 @@
     <title>GitHub Portfolio</title>
     <script src="script.js"></script>
     <link rel="stylesheet" href="github-website.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
     <header>
         <h1 class="page-header">Erin's Portfolio</h1>
     </header>
     <!-- Start navigation menu -->
-    <div class="navbar">
-        <a href="./index.html">Home</a>
-        <a href="./about.html">About</a>
-        <div class="subnav">
-          <button class="subnavbtn">Projects<i class="caret-down"></i></button>
-            <div class="subnav-content">
-                <a href="./GitHub_webpage.html">Creating a GitHub Webpage</a>
-            </div>
+        <div id="nav-placeholder">
+
         </div>
-    </div>
+
+        <script>
+        $(function(){
+        $("#nav-placeholder").load("nav.html");
+        });
+        </script>
     <!-- End navigation menu -->
     <figure style="margin: 5% 20%;">
         <img src="images/biopic_zion.JPG" alt="Erin at Zion National Park" style="width: 100%; min-width: 300px;">
