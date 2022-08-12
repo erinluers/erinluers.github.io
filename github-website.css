@@ -39,7 +39,7 @@ figcaption {
 /*Navigation CSS Starts
 css from: "https://www.w3schools.com/howto/howto_css_subnav.asp"*/
 .navbar {
-    overflow: hidden;
+    overflow: visible;
     padding: 15px 10px; 
     background-color: rgb(165, 178, 218); 
     font-size: larger; 
