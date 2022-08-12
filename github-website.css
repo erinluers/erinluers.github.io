@@ -50,7 +50,8 @@ css from: "https://www.w3schools.com/howto/howto_css_subnav.asp"*/
     float: left;
     text-align: center;
     display: inline;
-    padding: 14px 16px;grid-template: ;
+    padding: 14px 16px;
+    grid-template: ;
     text-decoration: none;
 }
 
@@ -80,7 +81,7 @@ css from: "https://www.w3schools.com/howto/howto_css_subnav.asp"*/
   /* Style the subnav content - positioned absolute */
   .subnav-content {
     display: none;
-    position: absolute;
+    /* position: absolute; */
     left: 0;
     background-color: rgb(110, 90, 133);
     width: 100%;
