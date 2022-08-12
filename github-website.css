@@ -38,7 +38,7 @@ figcaption {
 }
 /*Navigation CSS Starts
 css from: "https://www.w3schools.com/howto/howto_css_subnav.asp"*/
-.navbar {
+/* .navbar {
     overflow: visible;
     padding: 15px 10px; 
     background-color: rgb(165, 178, 218); 
@@ -53,16 +53,16 @@ css from: "https://www.w3schools.com/howto/howto_css_subnav.asp"*/
     padding: 14px 16px;
     grid-template: ;
     text-decoration: none;
-}
+} */
 
 /* The subnavigation menu */
-.subnav {
+/* .subnav {
     float: left;
     overflow: hidden;
-}
+} */
 
   /* Subnav button */
-  .subnav .subnavbtn {
+  /* .subnav .subnavbtn {
     border: none;
     outline: none;
     font-size: inherit;
@@ -70,25 +70,25 @@ css from: "https://www.w3schools.com/howto/howto_css_subnav.asp"*/
     font-family: inherit;
     background-color: inherit;
     margin: 0;
-  }
+  } */
   
   /* Add background color to navigation links on hover */
-  .navbar a:hover, .subnav:hover .subnavbtn {
+  /* .navbar a:hover, .subnav:hover .subnavbtn {
     background-color: rgb(110, 90, 133);
     color: white;
   }
-  
+   */
   /* Style the subnav content - positioned absolute */
-  .subnav-content {
+  /* .subnav-content {
     display: none;
     /* position: absolute; */
     left: 0;
     background-color: rgb(110, 90, 133);
     width: 100%;
-  }
+  } */
   
   /*css help from - "https://www.w3schools.com/howto/howto_css_arrows.asp"*/
-  .caret-down {
+  /* .caret-down {
         border: solid black;
         border-width: 0 3px 3px 0;
         display: inline-block;
@@ -96,24 +96,24 @@ css from: "https://www.w3schools.com/howto/howto_css_subnav.asp"*/
         margin: 5px;
         transform: rotate(45deg);
         -webkit-transform: rotate(45deg);
-      }
+      } */
 
   /* Style the subnav links */
-  .subnav-content a {
+  /* .subnav-content a {
     float: left;
     color: rgb(255, 255, 255);
     text-decoration: none;
   }
-  
+   */
   /* Add a grey background color on hover */
-  .subnav-content a:hover {
+  /* .subnav-content a:hover {
     color: rgb(114, 122, 239);
-  }
+  } */
   
   /* When you move the mouse over the subnav container, open the subnav content */
-  .subnav:hover .subnav-content {
+  /* .subnav:hover .subnav-content {
     display: block;
-  }
+  } */
   /*Navigation CSS Ends*/
 
   /* table > td {
